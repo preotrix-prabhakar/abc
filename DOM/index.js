@@ -1,61 +1,50 @@
-var arr=[
-    {name:"abc", marks:80},
-    {name:"xyz", marks:30},
-    {name:"qwe", marks:70},
-    {name:"deewana", marks:36},
-]
-
-
-
-
-
-
-
-
-
-var ans1=arr.reduce((accumulator,Element)=>{
-    // if(Element.marks>35)
-       return accumulator+= Element.marks
-},0)
-console.log(ans1)
-
-// console.log(arr);
-var ans2=arr.map((Element)=>{
-    return Element.marks;
-    // if(Element.marks>35)
-    //     console.log(Element.name); 
-})
-// console.log(ans2);
-
-// arr.map((Element)=>{
-//     console.log(Element.name,":",Element.marks)
+// var person={
+//     name:"prabhakar",
+//     "cost to company":2000,
+//     func:()=>{
+//         console.log('fun is being done by prabhu');
+//     }
 // }
-// )
-// arr.map((Element)=>{
-    
-//     console.log(Element.name,":",Element.marks)
-//    }
-// )
-// console.log("numb in progress");
-// var numb=[10,20,30,40]
-// var kux =numb.forEach((val)=>{
-//    return  val+=10;
-//     console.log(val);
-// })
-// console.log(numb)
-// console.log(kux);
+// console.log(person["cost to company"]);
+// person.func();
 
 
-////////////
-// var arr2=[10,20,30,40,50]
-// arr2.forEach((Element)=>{
-//     Element+=10;
-//    console.log(Element)
-// })
-// console.log(arr2);
-// console.log("for each ended");
-// arr2.map((Element)=>{
-//     Element+=10;
-//     console.log(Element)
-// })
-// console.log(arr2);
+// function person2(abc){
+//     this.name=abc,
+   
+//     this.operate=()=>console.log("operating default constructor");  
+// }
+// person3=new person2('sonu');
+// console.log(person3);
+// console.log(person3.name);  
+// // person2.operate();
+// person3.operate();
+// pers = new Object();
+// pers.abc="asdfsdf"
+// console.log(pers.abc);
+
+// var obj1={
+//     key:10
+// }
+// var obj2=obj1
+// obj2.key=obj1.key
+// obj1.key=50;
+// console.log(obj1.key);
+// console.log(obj2.key);
+var person={
+    name:"prabhakar",
+    age:20,
+    func:()=>{
+        console.log('fun is being done by prabhu');
+    }
+}
+// person.func();
+console.log(person);
+let person2=Object.create({
+    name:"shivakar",
+    age:24,
+    func:()=>{
+        console.log('fun is being done by shivu');
+    }
+})
+console.log(person2);

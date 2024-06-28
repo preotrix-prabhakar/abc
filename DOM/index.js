@@ -7,6 +7,12 @@ var arr=[
 
 
 
+
+
+
+
+
+
 var ans1=arr.reduce((accumulator,Element)=>{
     // if(Element.marks>35)
        return accumulator+= Element.marks
